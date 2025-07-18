@@ -1,0 +1,152 @@
+.monopoly-product{
+    width: 1200px;
+    margin: auto;
+    h3{
+        font-size: 24px;
+        font-weight: 700;
+        margin: 20px 0;
+        display: block;
+    }
+    .monopoly-product-container{
+        display: flex;
+        a{
+            width: 380px;
+            display: block;
+            img{
+                width: 100%;
+                cursor: pointer;
+                height: auto;
+            }
+        }
+        .slider-container{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: calc(100% - 390px);
+        .slider-item{
+            width: 100%;
+            height: auto;
+            .product-item{
+            width: 185px;
+            height: 442px;
+            margin: 5px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            a{
+                text-decoration: none;
+                .item-label{
+                    font-size: 11px;
+                    padding: 5px 0 20px 5px;
+                    background-color: #f1f1f1;
+                    width: 75px;
+                    border-radius: 2px;
+                    margin: 8px;
+                    color: black;
+                    font-weight: 300;
+                }
+                .item-img img{
+                    width: 172px;
+                }
+                .item-sale{
+                    width: 108px;
+                    height: 20px;
+                    background-color: red;
+                    position: relative;
+                    border-radius: 10px;
+                    margin: 0 0 8px 10px;
+                    img{
+                        width: 20px;
+                        position: absolute;
+                        margin-left: 2px;
+                    }
+                    span{
+                        position: absolute;
+                        font-size: 13px;
+                        color: white;
+                        margin-left: 26px;
+                        margin-top: 2px;
+                    }
+                }
+                h3{
+                    font-size: 14px;
+                    color: black;
+                    font-weight: 400;
+                    margin: 0 0 8px 10px;
+                    padding: 0;
+                }
+                .item-compare{
+                    width: auto;
+                    display: flex;
+                    margin-left: 6px;
+                    span{
+                        color: #858482;
+                        background-color: #f2f4f7;
+                        font-size: 12px;
+                        padding: 4px;
+                    }
+                }
+                .item-text-online{
+                    margin: 0 0 8px 8px;
+                    span{
+                        margin-left: 2px;
+                        color: #fd853a;
+                        font-size: 12px;
+                        font-weight: 700;
+                    }
+                }
+                .item-price{
+                    color: #dd2f2c;
+                    font-size: 18px;
+                    margin: 10px;
+                }
+                .price-discount{
+                    display: flex;
+                    margin: 8px 0 8px 8px;
+                    .price-old{
+                        font-size: 14px;
+                        margin: 0;
+                        color: #333;
+                    }
+                    .percent{
+                        font-size: 14px;
+                        color: #dd2f2c;
+                        margin-left: 10px;
+                    }
+                }
+                .item-gift{
+                    font-size: 14px;
+                    color: black;
+                    margin: 0 0 8px 8px;
+                }
+                .ratting-compare{
+                    padding: 0 0 8px 8px;
+                    svg{
+                        color: #ffb200;
+                        font-size: 10px;
+                    }
+                    b{
+                        font-size: 12px;
+                        color: #667085;
+                        font-weight: 400;
+                    }
+                }
+            }
+            }
+            .product-item :hover h3{
+                color: #2a83e9;
+            }
+            .product-item :hover .item-img img{
+                transform: translateY(-8px);
+            }
+        }
+        
+    }
+    }
+    
+}
+
+
+
+.slick-arrow svg{
+    width: 40px;
+}

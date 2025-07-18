@@ -1,0 +1,335 @@
+.menubar{
+    background-color: #ffd400;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    margin-top: 0px;
+}
+.menubar-container{
+    width: 1200px;
+    margin: auto;
+}
+
+.menubar ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.menubar ul li{
+    padding: 0px;
+    line-height: 43px;
+    cursor: pointer;
+
+}
+
+.menubar ul li:hover{
+    border-radius: 20px;
+    background-color: #f8f3c7;
+}
+
+.menubar ul li a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.menubar ul li a svg{
+    margin-right: 6px;
+}
+
+.li-submenu a{
+    margin-right: 6px;
+}
+
+/*-----------------submenu-bar:Phụ kiện------------------------*/
+
+.submenu{
+    width: 1100px;
+    position: absolute;
+    left: 400px;
+    border: 0.5px solid rgb(221, 218, 218);
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: white;
+    display: none;
+    z-index: 5;
+}
+
+.submenu-column{
+    float: left;
+    width: 50%;
+    padding: 5px;
+    line-height: 1;
+}
+
+.submenu-column h3{
+    font-size: 13px;
+    padding: 6px ;
+    color: black;
+    margin: 0;
+}
+
+.submenu-column ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0;
+}
+
+.submenu-column ul li{
+    width: 90px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.submenu-column ul li a{
+    font-size: 12px;
+    text-align: center;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.submenu-column ul li a img{
+    width: 54px;
+    display: flex;
+    margin: auto;
+}
+
+.phukien-submenu:hover .submenu{
+    display: block;
+}
+
+/*-----------------submenu-bar: Thu cũ------------------------*/
+
+.submenu-thucu{
+    width: 200px;
+    position: absolute;
+    right: 790px;
+    border: 0.5px solid rgb(221, 218, 218);
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: white;
+    display: none;
+    z-index: 5;
+}
+
+.submenu-column-thucu{
+    line-height: 2;
+}
+
+.submenu-column-thucu ul{
+    padding: 10px;
+}
+
+.submenu-column-thucu h3{
+    font-size: 13px;
+    margin: 0;
+}
+
+.submenu-column-thucu ul li{
+    display: flex;
+}
+
+.submenu-column-thucu ul li a{
+    font-size: 12px;
+    text-align: center;
+    line-height: 1;
+}
+
+.submenu-column-thucu ul li a img{
+    width: 54px;
+    text-align: center;
+}
+
+
+.thucu-submenu:hover .submenu-thucu{
+    display: block;
+}
+
+/*-----------------submenu-bar: PC, Màn hình------------------------*/
+.submenu-pcmayin{
+    width: 500px;
+    position: absolute;
+    right: 660px;
+    border: 0.5px solid rgb(221, 218, 218);
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    padding: 8px;
+    display: none;
+    z-index: 5;
+}
+
+.submenu-column-pc{
+    width: 65%;
+    float: left;
+}
+
+.submenu-column-pc h3{
+    font-size: 13px;
+    margin: 0;
+}
+
+.submenu-column-pc ul li{
+    display: flex;
+    margin: 0 4px;
+}
+
+.submenu-column-pc ul li a{
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.submenu-column-pc ul li a img{
+    width: 50px;
+    text-align: center;
+}
+
+/*-----------------submenu-bar: Máy in, mực------------------------*/
+.submenu-column-mayinmucin{
+    width: 35%;
+    float: right;
+}
+
+.submenu-column-mayinmucin h3{
+    font-size: 13px;
+    margin: 0;
+}
+
+.submenu-column-mayinmucin ul li{
+    display: flex;
+}
+
+.submenu-column-mayinmucin ul li a{
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+}
+
+.submenu-column-mayinmucin ul li a img{
+    width: 60px;
+    text-align: center;
+}
+
+.pcmayin-submenu:hover .submenu-pcmayin{
+    display: block;
+}
+
+
+/*-----------------submenu-bar: Sim, thẻ cào------------------------*/
+.submenu-simthecao{
+    width: 160px;
+    border: 0.5px solid rgb(221, 218, 218);
+    border-radius: 10px;
+    position: absolute;
+    right: 520px;
+    padding: 10px;
+    display: none;
+    z-index: 5;
+    background-color: white;
+}
+
+.submenu-column-simthecao ul li{
+    line-height: 1;
+    padding: 10px 4px;
+}
+
+.submenu-column-simthecao ul li a{
+    font-size: 12px;
+    line-height: 1;
+}
+
+.submenu-column-simthecao ul li a img{
+    width: 50px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+.simthecao-submenu:hover .submenu-simthecao{
+    display: block;
+}
+
+/*-----------------submenu-bar: Dịch vụ tiện ích------------------------*/
+.submenu-dichvu{
+    width: 980px;
+    position: absolute;
+    border: 0.5px solid rgb(221, 218, 218);
+    border-radius: 10px;
+    right: 360px;
+    padding: 10px;
+    display: none;
+    background-color: white;
+    z-index: 5;
+}
+
+.submenu-column-dichvu{
+    float: left;
+    width: 50%;
+    padding: 5px;
+    line-height: 1;
+}
+
+.submenu-column-dichvu h3{
+    font-size: 14px;
+    margin: 0;
+}
+
+.submenu-column-dichvu ul li{
+    line-height: 1;
+    padding-top: 10px;
+}
+
+.submenu-column-dichvu ul li a{
+    font-size: 12px;
+    line-height: 1;
+}
+
+.submenu-column-dichvu ul li a img{
+    width: 50px;
+}
+
+.submenu-column-dichvu1 ul li a{
+    text-align: center;
+}
+
+.submenu-column-dichvu1 ul{
+    padding-bottom: 10px;
+}
+
+.submenu-column-dichvu1 ul li{
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.submenu-column-dichvu1 ul li a img{
+    width: 50px;
+    margin-left: 14px;
+    display: block;
+    text-align: center;
+}
+
+
+.dichvu-submenu:hover .submenu-dichvu{
+    display: block;
+}
+
+
+.container-product{
+    width: 100%;
+    background-color: #f2f4f7;
+    height: auto;
+}
+
+.column-row1{
+    display: flex;
+}

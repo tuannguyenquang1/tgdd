@@ -6,6 +6,15 @@ import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { faCartShopping, faLocationDot, faAngleRight, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 class Navbar extends React.Component{
+    showAddressForm=()=>{
+        // const adressbtn= document.querySelector('#adress-form')
+        document.querySelector('.adress-form').style.display ="flex"
+    }
+
+    exitAddressForm=()=>{
+        // const adressclosebtn= document.querySelector('#adress-close')
+        document.querySelector('.adress-form').style.display ="none"
+    }
     
     render(){
         return(
@@ -26,21 +35,21 @@ class Navbar extends React.Component{
                         </li>
 
                         {/* Đăng nhập */}
-                        <li className="btn">
+                        <li className="btn-nav">
                             <a>
                                 <FontAwesomeIcon icon={faUser} /> Đăng nhập
                             </a>
                         </li>
 
                         {/* Giỏ hàng */}
-                        <li className="btn">
+                        <li className="btn-nav">
                             <a>
                                 <FontAwesomeIcon icon={faCartShopping} /> Giỏ hàng
                             </a>
                         </li>
 
                         {/* Địa chỉ */}
-                        <li id="adress_form" className="adress">
+                        <li id="adress-form" className="adress" onClick={()=>this.showAddressForm()}>
                             <a>
                                 <span className="left-icon">
                                     <FontAwesomeIcon icon={faLocationDot} /> Hồ Chí Minh
@@ -52,7 +61,11 @@ class Navbar extends React.Component{
                         </li>
                         <div className="adress-form">
                             <div className="adress-from-content">
+                            <div className="head-address">
                                 <h2>Chọn địa chỉ nhận hàng</h2>
+                                <h3 id="adress-close" onClick={()=>this.exitAddressForm()}>X</h3>
+                                
+                            </div>
                                 <form>
                                     <p>Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao</p>
                                     <select>
@@ -60,20 +73,20 @@ class Navbar extends React.Component{
                                         <option value="">TP.Hồ Chí Minh</option>
                                     </select>
                                     <select name="" id="">
-                                    <option value="">Chọn Quận\Huyện</option>
-                                    <option value="">Quận Bình Tân</option>
+                                        <option value="">Chọn Quận\Huyện</option>
+                                        <option value="">Quận Bình Tân</option>
                                     </select>
                                     <select name="" id="">
                                         <option value="">Chọn Phường Xã</option>
                                         <option value="">Bình Hưng Hòa B</option>
                                     </select>
-                                    <input type="text" placeholder="Số nhà, tên đường (không bắt buộc)"></input>
+                                    <input type="text" placeholder="Số nhà, tên đường (không bắt buộc)"/>
+                                    <span>Submit</span>
                                 </form>
-                                <span>Submit</span>
+                                
                             </div>
-                    </div>
-                    </ul>
-                    
+                        </div>
+                </ul>
                 </div>
             </div>
         )

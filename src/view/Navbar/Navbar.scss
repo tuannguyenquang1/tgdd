@@ -1,23 +1,29 @@
 .nav{
     text-align: center;
-
     width: 100%;
-    height: 80px;
     background-color: #ffd500;
-}
-
-.container{
-    width: 1200px;
-    margin: auto;
-}
-
-.container ul{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    list-style: none;
-    padding: 0;
-    margin-top: 16px;
+    padding: 4px 0;
+    .container{
+        width: 1200px;
+        margin: auto;
+        ul{
+            display: flex;
+            margin: auto;
+            text-decoration: none;
+            list-style: none;
+            padding: 0;
+            li{
+                a{
+                    color: black;
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+            .search{
+                position: relative;
+            }   
+        }
+    }
 }
 
 .container ul li img{
@@ -26,17 +32,9 @@
     margin-right: 10px;
 }
 
-.container ul li a{
-    color: black;
-    font-size: 16px;
-}
-
-.search{
-    position: relative;
-}
 
 .search input{
-    height: 50px;
+    height: 40px;
     width: 390px;
     border: none;
     border-radius: 500px;
@@ -47,32 +45,29 @@
 .search svg{
     position: absolute;
     right: 94%;
-    line-height: 40px;
     cursor: pointer;
     color: black;
-    top: 16px;
+    top: 14px;
     font-size: 15px;
 }
 
-.btn{
-    height: 42px;
-    width: 110px;
-    border: none;
+.btn-nav{
+    display: flex;
+    margin: auto;
+    padding: 10px 12px;
     border-radius: 20px;
     cursor: pointer;
-    position: relative;
-    margin-left: 5px;
 }
 
-.btn:hover{
+.btn-nav:hover{
     background-color: #f8f3c7;
 }
 
 .adress {
     width: 330px;
-    background-color: #f8f3c7;
+    background-color:#fde058;
     border-radius: 50px;
-    height: 50px;
+    height: 44px;
     margin-left: 5px;
     cursor: pointer;
 }
@@ -94,8 +89,8 @@
 /*------------------------adress-form---------------------------*/
 .adress-form{
     position: fixed;
-    width: 400px;
-    height: 400px;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
@@ -104,53 +99,77 @@
     text-align: center;
     align-items: center;
     z-index: 1;
-}
-.adress-form_content{
-    width: 450px;
-    height: 400px;
-    background-color: white;
-    border-radius: 20px;
-}
-.adress-form_content p{
-    padding-top: 20px;
-    font-size: 12px;
-}
-.adress-form_content h2{
-    font-size: 14px;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-    position: relative;
-}
-
-.adress-form_content h2 i{
-    display: block;
-    right: 14px;
-    position: absolute;
-    top: 35%;
-    cursor: pointer;
-}
-
-.adress-form_content input,select{
-    width: 370px;
-    height: 40px;
-    display: block;
-    margin-top: 20px;
-    margin-left: 40px;
-}
-
-.adress-form_content form{
-    height: 400px;
-}
-
-.adress-form_content span{
-    padding: 10px 20px;
-    background-color: green;
-    position: absolute;
-    top: 64%;
-    right: 48%;
-    cursor: pointer;
-    border-radius: 10px;
-    color: white;
+    .head-address{
+        display: flex;
+        
+        h2{
+            font-size: 14px;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            color: black;
+            margin: auto;
+        }
+        h3{
+            display: block;
+            right: 14px;
+            position: absolute;
+            cursor: pointer;
+            color: red;
+            right: 40%;
+            margin-top: 10px;
+        }
+    }
+    .adress-from-content{
+        width: 450px;
+        height: 370px;
+        background-color: white;
+        border-radius: 20px;
+        p{
+            font-size: 15px;
+            color: black;
+        }
+        h2{
+            font-size: 14px;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            i{
+                display: block;
+                right: 14px;
+                position: absolute;
+                top: 35%;
+                cursor: pointer;
+            }
+        }
+        input{
+            width: 360px;
+            height: 40px;
+            margin-top: 10px;
+        }
+        select{
+            width: 370px;
+            height: 40px;
+            display: block;
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+        form{
+            height: auto;
+            span{
+                display: block;
+                padding: 10px 20px;
+                background-color: green;
+                position: absolute;
+                right: 48%;
+                cursor: pointer;
+                border-radius: 10px;
+                color: white;
+                margin-top: 10px;
+            }
+        }
+        
+    }
 }
 
 
